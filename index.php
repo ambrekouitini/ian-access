@@ -10,5 +10,6 @@
     <main class="index">
         <h1>Bienvenue</h1>
     </main>
+    <script src="public/js/index.js"></script>
 </body>
 </html>
