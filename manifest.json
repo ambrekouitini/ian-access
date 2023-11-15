@@ -1,21 +1,14 @@
 {
-    "manifest_version": 2,
-    "name": "G Suite Certification app",
-    "description": "Link to G Suite Certification website",
-    "version": "1.1",
-    "icons": {
-    "128": "128.png"
-    },
-    "app": {
-    "urls": [
-    "http://certification.googleapps.com/app-info/"
-    ],
-    "launch": {
-    "web_url": "http://certification.googleapps.com/"
+  "manifest_version": 3,
+  "name": "Mon Extension",
+  "version": "1.0",
+  "description": "Description de mon extension",
+  "permissions": ["activeTab" , "tabs"],
+  
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["public/js/index.js"]
     }
-    },
-    "permissions": [
-    "unlimitedStorage",
-    "notifications"
-    ]
-    }
+  ]
+}
