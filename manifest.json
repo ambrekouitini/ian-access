@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Mon Extension",
+  "name": "DVO reader",
   "version": "1.0",
-  "description": "Description de mon extension",
+  "description": "Lecture d'un text associé a un boutton ",
   "permissions": ["activeTab" , "tabs"],
   
   "content_scripts": [
