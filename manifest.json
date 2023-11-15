@@ -3,16 +3,8 @@
   "name": "Mon Extension",
   "version": "1.0",
   "description": "Description de mon extension",
-  "permissions": ["activeTab"],
-  "browser_action": {
-    "default_icon": {
-      "16": "public/assets/1.png",
-      "48": "public/assets/1.png",
-      "128": "public/assets/1.png"
-    },
-    "default_title": "reader DV",
-    "default_popup": "popup.html"
-  },
+  "permissions": ["activeTab" , "tabs"],
+  
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
