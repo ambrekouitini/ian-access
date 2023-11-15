@@ -1,11 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30%;
+  height: 10vh;
+  background: white;
+  padding: 5vw;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
 
 .index {
   width: 100%;
+  padding: 15vh 3vh;
+}
+.index .chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+}
+.index .chatbot:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.index .popup {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  background-color: white;
+  border-radius: 30px 30px 0 0;
+  box-shadow: 0px -1px 7px 3px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 90%;
+  border-radius: 16px 16px 0 0;
+  transition: bottom 0.1s;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 6vh;
+  padding: 3vh;
+}
+.index .popup .close {
+  position: absolute;
+  top: 9vh;
+  left: 3vh;
+  z-index: 1000;
+}
+.index .popup .firstRow {
+  width: 100%;
+  display: flex;
+  gap: 5vh;
+  flex-direction: column;
+}
+.index .popup .firstRow .profil {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5vh;
+}
+.index .popup .firstRow .profil #name {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.375px;
+}
+.index .popup .firstRow .vocal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1vh;
+}
+.index .popup .firstRow .vocalRed {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1vh;
+}
+.index .popup .firstRow .name {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.375px;
+}
+.index .popup .firstRow .someone, .index .popup .firstRow .time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1vh;
+}
+.index .popup .secondRow {
+  display: flex;
+  justify-content: center;
+}
+.index .popup.open {
+  bottom: 0;
+}
+.index .title {
+  padding: 3vh 0 6vh 0;
+}
+.index .title h1 {
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+}
+.index .title h1 span {
+  font-size: 44px;
+  font-weight: 700;
+}
+.index .allActuality {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2vh;
+}
+.index .allActuality .titleContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2vh;
+}
+.index .allActuality .card {
+  position: relative;
+}
+.index .allActuality .card img {
+  width: 100%;
+}
+.index .allActuality .card .card-content {
+  padding: 1vh;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+.index .allActuality .card .card-content p {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  min-height: 36px;
+  font-style: normal;
+  display: flex;
+  align-items: flex-end;
 }
 
+/*# sourceMappingURL=style.css.map */
